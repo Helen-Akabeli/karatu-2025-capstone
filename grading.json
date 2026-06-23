@@ -1,0 +1,10 @@
+{
+  "cluster_name": "project-bedrock-cluster",
+  "region": "us-east-1",
+  "vpc_id": "vpc-00e1ab5b6e28aa470",
+  "assets_bucket_name": "bedrock-assets-soe-025-4174",
+  "lambda_function": "bedrock-asset-processor",
+  "dynamodb_table": "retail-carts",
+  "rds_mysql": "bedrock-mysql",
+  "rds_postgres": "bedrock-postgres"
+}
