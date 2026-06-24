@@ -1,0 +1,23 @@
+catalog:
+  db:
+    endpoint: "bedrock-mysql.cwfo6iwa8wsg.us-east-1.rds.amazonaws.com:3306"
+    name: retail
+    existingSecret: retail-mysql-secret
+    secretKey: password
+
+orders:
+  db:
+    endpoint: "bedrock-postgres.cwfo6iwa8wsg.us-east-1.rds.amazonaws.com:5432"
+    name: retail_pg
+    existingSecret: retail-postgres-secret
+    secretKey: password
+
+carts:
+  dynamodb:
+    tableName: bedrock-retail-carts
+    awsRegion: us-east-1
+    createTable: false
+
+ui:
+  service:
+    type: ClusterIP

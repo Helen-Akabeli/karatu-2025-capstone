@@ -1,10 +1,37 @@
 {
-  "cluster_name": "project-bedrock-cluster",
-  "region": "us-east-1",
-  "vpc_id": "vpc-00e1ab5b6e28aa470",
-  "assets_bucket_name": "bedrock-assets-soe-025-4174",
-  "lambda_function": "bedrock-asset-processor",
-  "dynamodb_table": "retail-carts",
-  "rds_mysql": "bedrock-mysql",
-  "rds_postgres": "bedrock-postgres"
+  "assets_bucket_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "bedrock-assets-alt-soe-025-4174"
+  },
+  "cluster_endpoint": {
+    "sensitive": false,
+    "type": "string",
+    "value": "https://CB436BAB4D03950891CD81FE67892532.gr7.us-east-1.eks.amazonaws.com"
+  },
+  "cluster_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "project-bedrock-cluster"
+  },
+  "mysql_endpoint": {
+    "sensitive": false,
+    "type": "string",
+    "value": "bedrock-mysql.cwfo6iwa8wsg.us-east-1.rds.amazonaws.com"
+  },
+  "postgres_endpoint": {
+    "sensitive": false,
+    "type": "string",
+    "value": "bedrock-postgres.cwfo6iwa8wsg.us-east-1.rds.amazonaws.com"
+  },
+  "region": {
+    "sensitive": false,
+    "type": "string",
+    "value": "us-east-1"
+  },
+  "vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-03e49b2de56abb787"
+  }
 }
